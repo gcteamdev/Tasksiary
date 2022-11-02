@@ -1,10 +1,10 @@
 .page{
     background-color:rgb(233, 233, 233);
-    width:100vw;
+   
     height:100vh;
 }
 .header{
-    width:100%;
+    width:100vw;
     height:90px;
     background-color: white;
     border-bottom-right-radius: 10px;
@@ -12,22 +12,25 @@
 }
 .containers{
     display:flex;
+    flex-direction: row;
     height:100%;
-    width:100%;
+    width:100vw;
     background-color:rgb(233, 233, 233);
 
 }
 .container1{
     height:100%;
-    width:50vw;
+    width:55vw
+    
 }
 .container2{
     height:100%;
-    width:20vw;
+    flex:1;
+    
 }
 .container3{
     height:100%;
-    width:23vw;
+    flex:1;
 }
 .projects-snap{
     background-color: white;
