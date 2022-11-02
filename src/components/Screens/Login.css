@@ -1,0 +1,55 @@
+.logo{
+width:8%;
+margin-left:10px;
+}
+
+.gradient-form {
+    height: 100vh !important;
+    }
+
+.gradient-custom-2 {
+/* fallback for old browsers */
+height:100vh !important;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: rgb(193,217,206);
+background: linear-gradient(to left, rgb(172, 189, 182) 0%, rgb(172, 205, 190) 0%, rgb(244, 243, 243) 94%);}
+.tasksSnap {
+margin-bottom: 10%;;
+}
+.form-control{
+    border:0;
+}
+.rememberMe{
+    font-size: x-small;
+}
+.Gmail-Msoft{
+    width:40%
+}
+.company-logo{
+  width:15%;
+  padding: 43px 2px 0 5px;
+  margin-bottom: 40px;
+  
+}
+.LoginOrNew{
+    font-size: smaller;
+    font-weight: 400;
+}
+.createNew{
+    font-weight: 700;
+}
+
+
+
+@media (min-width: 768px) {
+.gradient-form {
+height: 100vh !important;
+}
+}
+@media (min-width: 769px) {
+.gradient-custom-2 {
+border-top-right-radius: .3rem;
+border-bottom-right-radius: .3rem;
+}
+}

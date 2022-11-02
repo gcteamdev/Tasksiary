@@ -1,0 +1,77 @@
+.page{
+    background-color:rgb(233, 233, 233);
+    width:100vw;
+    height:100vh;
+}
+.header{
+    width:100%;
+    height:90px;
+    background-color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.containers{
+    display:flex;
+    height:100%;
+    width:100%;
+    background-color:rgb(233, 233, 233);
+
+}
+.container1{
+    height:100%;
+    width:50vw;
+}
+.container2{
+    height:100%;
+    width:20vw;
+}
+.container3{
+    height:100%;
+    width:23vw;
+}
+.projects-snap{
+    background-color: white;
+    height:40%;
+    border-radius: 10px;
+    margin:5px
+}
+.dashboard-snap{
+    background-color: white;
+    height:42%;
+    border-radius: 10px;
+    margin:5px;
+    margin-bottom: 0px;
+}
+.team-snap{
+    background-color: white;
+    height:30%;
+    border-radius: 10px;
+    margin:5px
+}
+.myTasks-snap{
+    background-color: white;
+    height:52%;
+    border-radius: 10px;
+    margin:5px
+}
+.calender-snap{
+    background-color: white;
+    height:28%;
+    border-radius: 10px;
+    margin:5px;
+    margin-right:20%
+}
+.inbox-snap{
+    background-color: white;
+    height:26%;
+    border-radius: 10px;
+    margin:5px;
+    margin-right:20%
+}
+.chat-snap{
+    background-color: white;
+    height:27%;
+    border-radius: 10px;
+    margin:5px;
+    margin-right:20%
+}
