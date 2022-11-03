@@ -9,14 +9,17 @@ import dots from "../assets/Login/dots.png";
 import SignGmail from "../assets/Login/sign in-google.png";
 import SignMsoft from "../assets/Login/sign in-microsoft.png";
 import companyLogo from "../assets/Login/Company Logo.png"
-//import {NavLink, Routes, Route } from 'react-router-dom';
-import Auth from '../Auth';
+//import { useNavigate} from 'react-router-dom';
 
-function Login() {
-   /* const navigate = useNavigate();
+
+function Login(props) {
+// const navigate = useNavigate();
+   /* 
   const navigateHome = () => {
     navigate('/auth');
   }; */ 
+
+
   return (
 <section className="gradient-form">
  
@@ -72,12 +75,13 @@ function Login() {
                <p className="float-right text-dark">Forgot Password?</p>
            </div>     
            <div className="form-group">        
-              
-          <button className="btn btn-dark col-12 btn-block" >
-            Log in
-           </button> 
            
-           
+           <div onClick={()=>props.onFormSwitch('/auth') }>
+             <div className="btn btn-dark col-12 btn-block" >
+                Log in
+              </div> 
+
+           </div> 
            
          {/*  <Routes>
            <Route path="/auth" element={<Auth />} />
