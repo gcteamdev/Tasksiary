@@ -7,7 +7,10 @@ import "@fontsource/barlow";
 
 function App() {
   return (
-<Auth />
+<div className="app">
+  <Auth />
+</div>
+
   );
 }
 
