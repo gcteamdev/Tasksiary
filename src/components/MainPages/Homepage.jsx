@@ -1,12 +1,13 @@
 import React from 'react';
 import "./StylePages.css";
+import "@fontsource/barlow";
 
 
 function Homepage() {
   return (
     <div className="page">
       <div className="header">
-      <h1> Welcome! to Homepage</h1>
+      <h1 className="welcome"> Welcome, Jose</h1>
       <h6> Header</h6>
       </div>
       {/* Below are the componenets of Homepage flexbox is undone, need more work! */}

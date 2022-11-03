@@ -81,7 +81,7 @@ const Sidebar=({children}) => {
                     </NavLink>
                 ))
             } 
-            <div>_______________________</div>
+            <hr />
            
         </div>
         <main className="col-12 main"> {children} </main>

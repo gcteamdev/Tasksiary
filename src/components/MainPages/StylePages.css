@@ -1,7 +1,7 @@
 .page{
     background-color:rgb(233, 233, 233);
-   
     height:100vh;
+    font-family: "Barlow";
 }
 .header{
     width:100vw;
@@ -9,6 +9,9 @@
     background-color: white;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+.welcome{
+    font-weight:bolder;
 }
 .containers{
     display:flex;
