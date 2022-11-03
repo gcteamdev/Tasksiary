@@ -42,3 +42,8 @@
     color:#1ccc7f!important;
     background: rgb(34, 57, 39);
   }
+  .bars:hover{
+    color:rgb(168, 203, 175);
+    transition: all .5s;
+    cursor: pointer;
+  }
