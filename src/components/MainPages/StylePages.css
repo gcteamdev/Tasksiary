@@ -1,5 +1,5 @@
 .page{
-    background-color:rgb(233, 233, 233);
+   background:#F6F7FB;
     height:100vh;
    /*  font-family: "Barlow"; */
 }
@@ -18,7 +18,7 @@
     flex-direction: row;
     height:100%;
     width:100vw;
-    background-color:rgb(233, 233, 233);
+    background-color:#F6F7FB;
 
 }
 .container1{
