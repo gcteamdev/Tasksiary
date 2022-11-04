@@ -19,7 +19,7 @@ const Sidebar=({children}) => {
     const toggle = () => setOpen (!isOpen);
     const menuItem=[
         {
-            path:"/",
+            path:"/homepage",
             name:"Home",
             icon:<HomeOutlinedIcon/>
         },
@@ -65,7 +65,7 @@ const Sidebar=({children}) => {
 
         <div style={{width: isOpen ? "200px" : "50px" }} className="sidebar">
             <div className="top_section">
-                <div   style={{display: isOpen ? "block" : "none"}} className="logo">
+                <div   style={{display: isOpen ? "block" : "none"}} className="logoSide">
                     <img  className="nav-logo" src={Logo} alt="logo"/>
                 </div>
                 <div style={{marginLeft : isOpen ? "20px" :"0px"}} className="bars">

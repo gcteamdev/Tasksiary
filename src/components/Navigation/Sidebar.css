@@ -24,12 +24,16 @@
     border: none;
 }
   .nav-logo{
-    width:65%;
+    width:85%; 
   }
   .top_section{
     display:flex;
     align-items:center;
     padding: 20px 15px;
+ 
+  }
+  .logoSide{
+    width:60%;
   }
   .link{
     display:flex;
