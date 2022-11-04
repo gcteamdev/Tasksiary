@@ -9,15 +9,11 @@ import dots from "../assets/Login/dots.png";
 import SignGmail from "../assets/Login/sign in-google.png";
 import SignMsoft from "../assets/Login/sign in-microsoft.png";
 import companyLogo from "../assets/Login/Company Logo.png"
-//import { useNavigate} from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 
 
-function Login(props) {
-// const navigate = useNavigate();
-   /* 
-  const navigateHome = () => {
-    navigate('/auth');
-  }; */ 
+function Login() {
+  const navigate = useNavigate();
 
 
   return (
@@ -31,10 +27,10 @@ function Login(props) {
                    <div className="d-flex justify-content-between mb-5">
                     <div className="d-flex logobar">
                      <img className="logo" src={Logo} alt="logo" />
-                      <h4 className="mt-3 font-weight-bolder">workarise</h4>
+                      <h6 className="mt-3 font-weight-bolder logoName">workarise</h6>
                     </div>
                    
-                     <img className="p-4" src={Settings} alt="settings" /> 
+                     <img className="p-4 settingIcon" src={Settings} alt="settings" /> 
                    </div>
                   </div>
               <div className=" p-md-5 mx-md-4">
@@ -44,9 +40,9 @@ function Login(props) {
            <div className="d-flex justify-content-between">
             <img className="company-logo " src={companyLogo} alt="companyLogo" />
 
-            <div className="mt-4">
-               <h3 className="text-center">Welcome back, José</h3>
-               <h6 className="LoginOrNew">please sign in or <span className="createNew">create a new account</span></h6>
+            <div className="mt-4 ">
+               <h3 className="text-center headerLogin mt-3">Welcome back, José</h3>
+               <h6 className="LoginOrNew">Please sign in or <span className="createNew">create a new account</span></h6>
             </div>
            </div>
               
@@ -76,22 +72,17 @@ function Login(props) {
            </div>     
            <div className="form-group">        
            
-           <div onClick={()=>props.onFormSwitch('/auth') }>
-             <div className="btn btn-dark col-12 btn-block" >
+         
+              <div onClick={()=>navigate('/homepage',{replace:true}) } className="btn btn-dark col-12 btn-block" >
                 Log in
-              </div> 
-
-           </div> 
-           
-         {/*  <Routes>
-           <Route path="/auth" element={<Auth />} />
-          
-         </Routes>  */} 
+              </div>  
+            
+             
          </div>  
            <div className="d-flex mt-1 text-muted">
-             <span>___________</span>
+             <hr className="hr-break" />
              <h6 className="rememberMe mt-3 m-2"> Sign in with Gmail or Microsoft </h6>
-             <span>____________</span>
+             <hr className="hr-break"/>
            </div>
            <div className="d-flex justify-content-between mb-5">
              <img className="Gmail-Msoft" src={SignGmail} alt="signIn with Gmail"/>
@@ -103,7 +94,7 @@ function Login(props) {
                  </div>
             </div>
             <div className="col-lg-6 d-flex align-items-center gradient-custom-2 bg-primary">
-              <div className="text-dark px-3 py-4 p-md-5 mx-md-4 d-column ">
+              <div className="text-dark px-3 py-4 p-md-5 mx-md-4 d-column greenCtn ">
                 <div className="col-12  text-center">
                   <img src={TasksSnap} alt="group-tasks-snapshot" className="tasksSnap" />
                 </div>    

@@ -1,11 +1,15 @@
 .logo{
-width:8%;
-margin-left:10px;
+width:9%;
+margin-left:2%
 }
+.logoName{
+ font-weight: 900;
 
+}
 .gradient-form {
-    height: 100vh !important;
-    }
+height: 100vh !important;
+
+}
 
 .gradient-custom-2 {
 /* fallback for old browsers */
@@ -27,10 +31,13 @@ margin-bottom: 10%;;
     width:40%
 }
 .company-logo{
-  width:15%;
+  width:18%;
   padding: 43px 2px 0 5px;
   margin-bottom: 40px;
   
+}
+.headerLogin{
+  font-weight:900
 }
 .LoginOrNew{
     font-size: smaller;
@@ -39,12 +46,25 @@ margin-bottom: 10%;;
 .createNew{
     font-weight: 700;
 }
+.hr-break{
+height: 1px;
+color: black;
+background-color: black;
+border: none;
+width:20vw
+}
 
-
+@media (min-width: 920px) {
+.gradient-form {
+height: 100vh !important;
+position:fixed;
+}
+}
 
 @media (min-width: 768px) {
 .gradient-form {
 height: 100vh !important;
+
 }
 }
 @media (min-width: 769px) {
@@ -52,4 +72,13 @@ height: 100vh !important;
 border-top-right-radius: .3rem;
 border-bottom-right-radius: .3rem;
 }
+}
+@media(max-width:768px) {
+    .tasksSnap{
+        width:90%
+    }
+    .logo{
+        width:10%;
+        margin-left:5%
+        }
 }
