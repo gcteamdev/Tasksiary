@@ -10,6 +10,8 @@ import Marketing from '../MainPages/Departments/Marketing';
 import Sales from '../MainPages/Departments/Sales';
 import HR from '../MainPages/Departments/HR';
 import "../Navigation/Sidebar";
+import Alerts from '../MainPages/Alerts';
+import Profile from '../MainPages/Profile';
 
 
 
@@ -27,6 +29,9 @@ function Auth() {
         <Route exact path="/marketing" element={<Marketing/>} />
         <Route exact path="/sales" element={<Sales/>} />
         <Route exact path="/hr" element={<HR/>} /> 
+        <Route exact path="/alerts" element={<Alerts/>} /> 
+        <Route exact path="/profile" element={<Profile/>} /> 
+
      </Routes>
    </Sidebar>
    </>

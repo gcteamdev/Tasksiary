@@ -1,59 +1,72 @@
-.container{
-    display:flex;
-    padding:0;
-    margin:0;
-    position:fixed;
+.container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  position: fixed;
   /*   font-family: "Barlow"; */
-  
-  }
-  main{
-    width:100%;
-    padding: 20px;
-  
-  }
-  .sidebar{
-    background-color: black;
-    color:#fff;
-    height:100vh;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-  hr{
-    height: 2px;
-    background-color: #fff;
-    border: none;
 }
-  .nav-logo{
-    width:85%; 
-  }
-  .top_section{
-    display:flex;
-    align-items:center;
-    padding: 20px 15px;
- 
-  }
-  .logoSide{
-    width:60%;
-  }
-  .link{
-    display:flex;
-    color:#fff;
-    padding:10px 15px;
-    text-decoration: none;
-    gap: 15px;
-    transition: all .5s;
-  }
-  .link:hover{
-    transition: all .5s;
-    background:rgb(168, 203, 175);
-    color:black;
-  }
-  .active{
-    color:#1ccc7f!important;
-    background: rgb(34, 57, 39);
-  }
-  .bars:hover{
-    color:rgb(168, 203, 175);
-    transition: all .5s;
-    cursor: pointer;
-  }
+main {
+  width: 100%;
+  padding: 20px;
+}
+.sidebar {
+  background-color: black;
+  color: #fff;
+  height: 100vh;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  display: block;
+  justify-content: space-between;
+}
+.linebreak{
+  background-color: azure;
+}
+hr {
+  height: 1.5px;
+  background-color: #fff;
+  border: none;
+}
+.nav-logo {
+  width: 85%;
+}
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+.logoSide {
+  width: 60%;
+}
+.link {
+  display: flex;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  gap: 15px;
+  transition: all 0.5s;
+}
+.link:hover {
+  transition: all 0.5s;
+  background: rgb(168, 203, 175);
+  color: black;
+}
+.active {
+  color: #1ccc7f !important;
+  background: rgb(34, 57, 39);
+}
+.bars:hover {
+  color: rgb(168, 203, 175);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.Nav-bottom{
+  justify-content: space-between;
+}
+.navBottomLogo{
+  width:55%;
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+.menu2{
+  margin-top:28%;
+}
