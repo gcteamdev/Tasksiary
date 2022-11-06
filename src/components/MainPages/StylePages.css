@@ -1,83 +1,112 @@
-.page{
-   background:#F6F7FB;
-    height:100vh;
-   /*  font-family: "Barlow"; */
+/* --Home Page-- */
+.page {
+  background: #f6f7fb;
+  height: 100vh;
+  /*  font-family: "Barlow"; */
 }
-.header{
-    width:100vw;
-    height:90px;
-    background-color: white;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+.header {
+  width: 100vw;
+  height: 90px;
+  background-color: white;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-.welcome{
-    font-weight:bolder;
+.welcome {
+  font-weight: bolder;
 }
-.containers{
+.project-header {
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1.5px solid black;
+}
+.status-outer{
+    display: flex;
+    border-bottom: 2.2px solid rgb(162, 157, 157);
+}
+.containers {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100vw;
+  background-color: #f6f7fb;
+}
+.status {
+  justify-content: space-around;
+  width:90%;
+}
+.projects {
+  font-weight: 900;
+}
+.num {
+  font-weight: 900;
+}
+.toogleAndDash{
+    justify-content: space-around;
     display:flex;
-    flex-direction: row;
-    height:100%;
-    width:100vw;
-    background-color:#F6F7FB;
-
+    width:28%;
 }
-.container1{
-    height:100%;
-    width:55vw
-    
+.container1 {
+  height: 100%;
+  width: 42%;
+  overflow-y: scroll;
 }
-.container2{
-    height:100%;
-    flex:1;
-    
+/* below css will get rid of scrollbar display */
+::-webkit-scrollbar {
+  display: none;
 }
-.container3{
-    height:100%;
-    flex:1;
+.container2 {
+  height: 100%;
+  width: 25%;
 }
-.projects-snap{
-    background-color: white;
-    height:40%;
-    border-radius: 10px;
-    margin:5px
+.container3 {
+  height: 100%;
+  width: 25%;
 }
-.dashboard-snap{
-    background-color: white;
-    height:42%;
-    border-radius: 10px;
-    margin:5px;
-    margin-bottom: 0px;
+.projects-snap {
+  background-color: white;
+  height: 40%;
+  border-radius: 10px;
+  margin: 5px;
+  overflow-y: scroll;
 }
-.team-snap{
-    background-color: white;
-    height:30%;
-    border-radius: 10px;
-    margin:5px
+.dashboard-snap {
+  background-color: white;
+  height: 42%;
+  border-radius: 10px;
+  margin: 5px;
+  margin-bottom: 0px;
 }
-.myTasks-snap{
-    background-color: white;
-    height:52%;
-    border-radius: 10px;
-    margin:5px
+.team-snap {
+  background-color: white;
+  height: 30%;
+  border-radius: 10px;
+  margin: 5px;
 }
-.calender-snap{
-    background-color: white;
-    height:28%;
-    border-radius: 10px;
-    margin:5px;
-    margin-right:20%
+.myTasks-snap {
+  background-color: white;
+  height: 52%;
+  border-radius: 10px;
+  margin: 5px;
 }
-.inbox-snap{
-    background-color: white;
-    height:26%;
-    border-radius: 10px;
-    margin:5px;
-    margin-right:20%
+.calender-snap {
+  background-color: white;
+  height: 28%;
+  border-radius: 10px;
+  margin: 5px;
+  margin-right: 20%;
 }
-.chat-snap{
-    background-color: white;
-    height:27%;
-    border-radius: 10px;
-    margin:5px;
-    margin-right:20%
+.inbox-snap {
+  background-color: white;
+  height: 26%;
+  border-radius: 10px;
+  margin: 5px;
+  margin-right: 20%;
+}
+.chat-snap {
+  background-color: white;
+  height: 27%;
+  border-radius: 10px;
+  margin: 5px;
+  margin-right: 20%;
 }

@@ -1,0 +1,15 @@
+.form {
+  background: #dfd9d9;
+  height: 380px;
+}
+.save {
+  border-radius: 5px 10px 5px 10px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-top: 40px !important;
+}
+.new-task {
+  font-weight: bolder;
+  font-size: 27px;
+}
