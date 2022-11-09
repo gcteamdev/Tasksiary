@@ -1,15 +1,30 @@
 .form {
-  background: #dfd9d9;
+  background:#F6F7FB;
   height: 380px;
+  box-shadow: rgba(0, 0, 0, 0.1) -5px 14px 22px;
+  position:absolute;
+  top:10%;
+  width:45vw;
 }
 .save {
-  border-radius: 5px 10px 5px 10px;
-  background-color: black;
+  border-radius: 12px;
+  background-color:#1cab6d;
   color: white;
-  padding: 10px;
+  padding: 10px 40px 10px;
   margin-top: 40px !important;
+  width:100%;
+  border:none
 }
-.new-task {
-  font-weight: bolder;
-  font-size: 27px;
+.save:hover{
+  background:#1ccc7f;  
+  color: rgb(91, 90, 90);
+  transition: all 0.5s;
+  cursor: pointer;
+  font-weight:800
+  
 }
+input{
+  border:none
+}
+
+

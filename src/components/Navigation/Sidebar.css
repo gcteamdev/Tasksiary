@@ -63,10 +63,29 @@ hr {
   justify-content: space-between;
 }
 .navBottomLogo{
-  width:55%;
-  margin-left: 10px;
-  margin-bottom: 50px;
+  width:65%;
+  margin-left: 12px;
+
+}
+.menu1{
+  height:32vh;
+  overflow-y: scroll;
+  overflow-x:hidden;
+}
+
+::-webkit-scrollbar {
+  display:inline-block!important;
+  background-color:rgba(17, 15, 15, 0);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 2px #dbdce0;
+  background-color: #F6F7FB;
 }
 .menu2{
-  margin-top:28%;
+  margin-top:98%;
 }
