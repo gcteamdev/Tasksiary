@@ -1,11 +1,14 @@
 import React from 'react';
-import './StylePages.css';
+import './HomePage.css';
 import '@fontsource/barlow';
 import { TasksContext } from '../AddTask/TasksContext';
 import { useContext } from 'react';
-//import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
+import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
 import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
-import AddTaskIcon from '@mui/icons-material/AddTask';
+//import AddTaskIcon from '@mui/icons-material/AddTask';
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+import TasksList2 from '../AddTask/TaskList2';
+import MessageAddTask from '../AddTask/MessageAddTask';
 
 function Homepage() {
   const [tasks] = useContext(TasksContext);
@@ -21,7 +24,7 @@ function Homepage() {
           <div className="projects-snap">
             <div className="project-header d-md-block d-lg-flex">
               <h5 className="projects">Projects</h5>
-              <h6 className="projects">November 2022</h6>
+              <h6 className="num">November 2022</h6>
             </div>
 
             <div className="status-outer mt-lg-2">
@@ -44,37 +47,54 @@ function Homepage() {
                 </div>
               </div>
               <div className="toogleAndDash">
-                <div>
+               {/*  <div>
                   <AddTaskIcon />
-                </div>
-                <div >
+                </div> */}
+                <div>
                   <GridViewOutlinedIcon />
                 </div>
-                {/* <div >
+                 <div >
                   <MenuTwoToneIcon />
-                </div> */}
+                </div> 
               </div>
+            </div>
+            <div className="project-TaskSnaps">
+              {!tasks.length ? (
+                <MessageAddTask />
+              ) : (
+                <div>
+                  <h6 className="num">Todo</h6>
+                  <TasksList2 />
+                </div>
+              )}
             </div>
           </div>
           <div className="dashboard-snap">
-            <h3>Dashboard</h3>
+            <div className="project-header d-md-block d-lg-flex">
+              <h5 className="projects">Dashboard</h5>
+              <div className=" dashboard-header">
+                <h6 className="num">November 7, 2022</h6>
+
+                <button className="dBoard-AddTask">
+                 
+                  <span className="plusBtn">
+                  
+                    <AddCircleOutlineIcon />
+                  </span>
+                  Add Task
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="container2">
-          <div className="team-snap">
-            <h3>Team Members</h3>
-          </div>
-          <div className="myTasks-snap">
-            <h3>My Tasks</h3>
-          </div>
-        </div>
-        <div className="container3 col-3">
+
+        <div className="container2 ">
           <div className="calender-snap">
             <h3>Calender</h3>
           </div>
           <div className="inbox-snap">
-            <h3>Inbox</h3>
-            <h5>Messages from Team members</h5>
+            <h3>Team Members</h3>
+            <h5>contact/ Team members</h5>
           </div>
           <div className="chat-snap">
             <h3>Chat</h3>
