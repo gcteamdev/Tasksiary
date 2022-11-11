@@ -3,6 +3,7 @@ import AddTaskForm from '../AddTask/AddTaskForm';
 import TaskOutlinedIcon from '@mui/icons-material/TaskOutlined';
 import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import TasksList from '../AddTask/TaskList';
+import TaskListsInProgress from "../AddTask/TaskListsInProgress"
 import './DailyTasks.css';
 import { useContext, useState } from 'react';
 import { TasksContext } from '../AddTask/TasksContext';
@@ -11,7 +12,7 @@ import { nanoid } from 'nanoid';
 
 function DailyTasks() {
   const id = nanoid();
-  const [tasks,setTasks] = useContext(TasksContext);
+  const [tasks,setTasks,inprogressTodos, setPrgressTodos] = useContext(TasksContext);
   const [popup, SetPopup] = useState(false);
   const handleAddTask = () => {
     SetPopup(!popup);
@@ -34,18 +35,7 @@ function DailyTasks() {
 
   return (
     <div className="dailyTask-P">
-      <DragDropContext  onDragEnd={dragEnd}>
-        <Droppable
-          droppableId={`droppable${id}`}
-          direction="vertical"
-          type="column"
-        >
-          {(provided) => (
-            <div
-              className="my-4"
-              {...provided.droppableProps}
-              ref={provided.innerRef}
-            >
+       <DragDropContext  onDragEnd={dragEnd}>  
               {popup ? (
                 <div className="popupCtn">
                   <AddTaskForm />
@@ -67,12 +57,30 @@ function DailyTasks() {
                   <h6 className="Tasks-Heading"> Team Members (4)</h6>
                 </div>
               </div>
-              <div className="taskContainer">
+    <div className="taskContainer">
+
+   
+        <Droppable
+          droppableId={`droppableTODO${id}`}
+          direction="vertical"
+          type="column"
+        >
+          {(provided) => (
+            <div
+              className="my-4"
+              {...provided.droppableProps}
+              ref={provided.innerRef}
+             >
+
+
+
                 <div className="taskCtn1">
                   <div className="cards-box">
                     <div className="innerHeading">
                       <h6> To Do Tasks</h6>
-                      <div className="num">{tasks.length} </div>
+                      <div className="num">
+                        {tasks.length}
+                      </div>
                     </div>
                     <div className="cardsHolder">
                       <TasksList />
@@ -82,16 +90,54 @@ function DailyTasks() {
                     + Add Task
                   </h6>
                 </div>
+
+
+
+              {/*  //so don't bleeed on bottom */}
+              {provided.placeholder}
+            </div>
+         )}
+        </Droppable>
+
+
+
+        <Droppable
+          droppableId={`droppableINPROGRESS${id}`}
+          direction="vertical"
+          type="column"
+        >
+          {(provided) => (
+            <div
+              className="my-4"
+              {...provided.droppableProps}
+              ref={provided.innerRef}
+             >
+
                 <div className="taskCtn2">
                   <div className="cards-box">
                     <div className="innerHeading">
                       <h6> In Progress</h6>
                       <div className="num">0 </div>
                     </div>
-                    <div className="cardsHolder">{/* <TasksList /> */}</div>
+                    <div className="cardsHolder">
+                      <TaskListsInProgress />
+                      </div>
                   </div>
                   <h6 className="AddTaskSign">+ Add Task</h6>
                 </div>
+
+
+
+              {/*  //so don't bleeed on bottom */}
+              {provided.placeholder}
+            </div>
+         )}
+        </Droppable>
+
+
+
+
+
                 <div className="taskCtn3">
                   <div className="cards-box">
                     <div className="innerHeading">
@@ -101,13 +147,10 @@ function DailyTasks() {
                   </div>
                   <h6 className="AddTaskSign">+ Add Task</h6>
                 </div>
+
+
               </div>
 
-              {/*  //so don't bleeed on bottom */}
-              {provided.placeholder}
-            </div>
-          )}
-        </Droppable>
       </DragDropContext>
     </div>
   );

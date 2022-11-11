@@ -3,14 +3,11 @@ import React, { useState, createContext } from 'react';
 export const TasksContext = createContext();
 
 export const TaskProvider = (props) => {
-  const [tasks, setTasks] = useState([
-  /*   --below json is for css purpose only-- */
- 
-       
-  ]);
+  const [tasks, setTasks] = useState([]);
+  const [inprogressTodos, setPrgressTodos] = useState([]);
 
   return (
-    <TasksContext.Provider value={[tasks, setTasks]}>
+    <TasksContext.Provider value={[tasks, setTasks, inprogressTodos,setPrgressTodos]}>
       {props.children}
     </TasksContext.Provider>
   );
