@@ -5,8 +5,8 @@ import { nanoid } from 'nanoid';
 import { Draggable } from 'react-beautiful-dnd';
 import { Col } from 'react-bootstrap';
 
-function TaskListsInProgress() {
-  const [inprogressTodos, setPrgressTodos]= useContext(TasksContext);
+function InProgress() {
+  const [ inprogressTodos, setPrgressTodos]= useContext(TasksContext);
   const id = nanoid();
 
   return (
@@ -27,6 +27,8 @@ function TaskListsInProgress() {
                 date={task.date}
                 description={task.description}
                 id={id}
+                tasks={inprogressTodos}
+                setPrgressTodos={setPrgressTodos}
               />
 
             </Col>
@@ -42,4 +44,4 @@ function TaskListsInProgress() {
   )
 }
 
-export default TaskListsInProgress;
+export default InProgress;

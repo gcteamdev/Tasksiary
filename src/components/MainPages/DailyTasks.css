@@ -30,8 +30,8 @@
   justify-content: space-around;
 }
 .taskCtn1 {
-  height: 87vh;
-  width: 30%;
+  min-height: 87vh;
+  width: 25vw;
   background: #f6f7fb;
   border-radius: 18px;
   border-top-right-radius: 8px;
@@ -41,8 +41,8 @@
   justify-content: space-between;
 }
 .taskCtn2 {
-  height: 87vh;
-  width: 30%;
+  min-height: 87vh;
+  width: 25vw;
   background: #f6f7fb;
   border-radius: 18px;
   border-top-right-radius: 8px;
@@ -50,8 +50,8 @@
   border-top: 8px solid #c98dd8;
 }
 .taskCtn3 {
-  height: 87vh;
-  width: 30%;
+  min-height: 87vh;
+  width: 25vw;
   background: #f6f7fb;
   border-radius: 18px;
   border-top-right-radius: 8px;
