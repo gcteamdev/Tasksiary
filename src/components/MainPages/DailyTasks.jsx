@@ -3,12 +3,13 @@ import AddTaskForm from '../AddTask/AddTaskForm';
 import TaskOutlinedIcon from '@mui/icons-material/TaskOutlined';
 import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import TasksList from '../AddTask/TaskList';
-//import InProgress from '../AddTask/InProgress';
 import './DailyTasks.css';
 import { useContext, useState } from 'react';
 import { TasksContext } from '../AddTask/TasksContext';
 import { DragDropContext, Droppable } from 'react-beautiful-dnd';
 import { nanoid } from 'nanoid';
+import Inprogress from './Inprogress';
+
 
 function DailyTasks() {
   const id = nanoid();
@@ -89,8 +90,8 @@ function DailyTasks() {
         <div className="taskContainer">
           <Droppable
             droppableId={`droppableTODO${id}`}
-            direction="horizontal"
-            type="row"
+           /*  direction="horizontal"
+            type="row" */
           >
             {(provided) => (
               <div
@@ -121,8 +122,8 @@ function DailyTasks() {
 
           <Droppable
             droppableId={`droppableINPROGRESS${id}`}
-            direction="vertical"
-            type="column"
+      /*       direction="horizontal"
+            type="row" */
           >
             {(provided) => (
               <div
@@ -137,8 +138,8 @@ function DailyTasks() {
                       <div className="num">0 </div>
                     </div>
                     <div className="cardsHolder">
-                     {/*  <InProgress /> */}
-                    </div>
+                   < Inprogress/>
+                    </div> 
                   </div>
                   <h6 className="AddTaskSign">+ Add Task</h6>
                 </div>

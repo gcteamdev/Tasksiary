@@ -1,25 +1,25 @@
 import React, { useContext} from 'react';
-import Task from './Task';
-import { TasksContext } from './TasksContext';
+import Task from '../AddTask/Task';
+import { TasksContext } from "../AddTask/TasksContext"
 import { nanoid } from 'nanoid';
 import { Draggable } from 'react-beautiful-dnd';
-import { Col } from 'react-bootstrap';
+import { Col } from 'react-bootstrap'; 
 
-function InProgress() {
-  const [ inprogressTodos, setPrgressTodos]= useContext(TasksContext);
-  const id = nanoid();
+function Inprogress() {
+  const [inprogressTodos, setPrgressTodos]= useContext(TasksContext);
+ // const id = nanoid();
 
   return (
    
   <div>
-     {inprogressTodos.map((task, id) => (
-         <Draggable key={task.id} draggableId={`draggable${id}`} index={id}>
+     {inprogressTodos?.map((task, id) => (
+         <Draggable key={task.id} draggableId={`draggable-Inprog${id}`} index={id}>
          {(provided) => (
              <Col
                {...provided.draggableProps}
                {...provided.dragHandleProps}
                ref={provided.innerRef}
-             >
+             > 
         
               <Task
                 name={task.name}
@@ -28,15 +28,15 @@ function InProgress() {
                 description={task.description}
                 id={id}
                 tasks={inprogressTodos}
-                setPrgressTodos={setPrgressTodos}
+                setTasks={setPrgressTodos}
               />
 
-            </Col>
+             </Col>
           
           )}
        
         
-           </Draggable>
+           </Draggable> 
         ))}
    
     </div>
@@ -44,4 +44,4 @@ function InProgress() {
   )
 }
 
-export default InProgress;
+export default Inprogress;

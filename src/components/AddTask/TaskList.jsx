@@ -3,7 +3,7 @@ import Task from './Task';
 import { TasksContext } from './TasksContext';
 import { nanoid } from 'nanoid';
 import { Draggable } from 'react-beautiful-dnd';
-import { Col } from 'react-bootstrap';
+import { Col } from 'react-bootstrap'; 
 
 function TasksList() {
   const [tasks, setTasks]= useContext(TasksContext);
@@ -19,7 +19,7 @@ function TasksList() {
                {...provided.draggableProps}
                {...provided.dragHandleProps}
                ref={provided.innerRef}
-             >
+             > 
         
               <Task
                 name={task.name}
@@ -27,14 +27,16 @@ function TasksList() {
                 date={task.date}
                 description={task.description}
                 id={id}
+                tasks={tasks}
+                setTasks={setTasks}
               />
 
-            </Col>
+             </Col>
           
           )}
        
         
-           </Draggable>
+           </Draggable> 
         ))}
    
     </div>
