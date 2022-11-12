@@ -1,17 +1,13 @@
 import React from 'react';
 import './HomePage.css';
 import '@fontsource/barlow';
-import { TasksContext } from '../AddTask/TasksContext';
-import { useContext } from 'react';
 import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
 import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
 //import AddTaskIcon from '@mui/icons-material/AddTask';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
-import TasksList2 from '../AddTask/TaskList2';
-import MessageAddTask from '../AddTask/MessageAddTask';
 
-function Homepage() {
-  const [tasks] = useContext(TasksContext);
+function Homepage() {/* 
+  const [tasks] = useContext(TasksContext); */
   return (
     <div className="page">
       <div className="header">
@@ -30,7 +26,7 @@ function Homepage() {
             <div className="status-outer mt-lg-2">
               <div className="status  d-md-block d-lg-flex col-lg-12  overflow-hidden">
                 <div>
-                  <div className="num">{tasks.length}</div>
+                  <div className="num">{/* {tasks.length} */}</div>
                   <h6 className="text-dark">In Progress </h6>
                 </div>
                 <div>
@@ -42,7 +38,7 @@ function Homepage() {
                   <h6 className="text-dark">Upcoming</h6>
                 </div>
                 <div>
-                  <div className="num">{tasks.length}</div>
+                  <div className="num">{/* {tasks.length} */}</div>
                   <h6 className="text-dark">Total</h6>
                 </div>
               </div>
@@ -59,14 +55,14 @@ function Homepage() {
               </div>
             </div>
             <div className="project-TaskSnaps">
-              {!tasks.length ? (
+             {/*  {!tasks.length ? (
                 <MessageAddTask />
               ) : (
                 <div>
                   <h6 className="num">Todo</h6>
                   <TasksList2 />
                 </div>
-              )}
+              )} */}
             </div>
           </div>
           <div className="dashboard-snap">
