@@ -10,7 +10,7 @@ main {
   padding: 20px;
 }
 .sidebar {
-  background-color: black;
+  background-color: #273B4A;
   color: #fff;
   height: 100vh;
   border-bottom-right-radius: 15px;
@@ -27,15 +27,28 @@ hr {
   border: none;
 }
 .nav-logo {
-  width: 85%;
+  width: 8vw;
+  margin-top: -15px;
+}
+.titile{
+  font-weight: bold;
+  color:#273B4A;
+  font-size: 22px;
+}
+.job-title{
+  font-weight: bold;
+  color:#273B4A;
+  font-size: 12px;
 }
 .top_section {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding: 20px 15px;
+  background-color: #A2C970;
+  height:25vh;
 }
 .logoSide {
-  width: 60%;
+  width: 80%;
 }
 .link {
   display: flex;
@@ -65,6 +78,8 @@ hr {
 .navBottomLogo{
   width:65%;
   margin-left: 12px;
+  font-size: 35px;
+  color: #A2C970;
 
 }
 .menu1{
@@ -87,5 +102,6 @@ hr {
   background-color: #F6F7FB;
 }
 .menu2{
-  margin-top:98%;
+  margin-top:55%;
+  margin-bottom: 5%;
 }

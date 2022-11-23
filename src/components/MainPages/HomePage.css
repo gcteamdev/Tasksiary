@@ -1,146 +1,101 @@
-/* --Home Page-- */
-.page {
-  background: #f6f7fb;
-  height: 100vh;
-  /*  font-family: "Barlow"; */
-}
-.header {
-  width: 100vw;
-  height: 90px;
-  background-color: white;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-.welcome {
-  font-weight: bolder;
-}
-.project-header {
+.homepage-Ctn{
+  display:flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  border-bottom: 1.5px solid black;
+  margin:0;
+  padding:0;
+  width:100vw;
 }
-.status-outer{
-    display: flex;
-    border-bottom: 2.2px solid rgb(162, 157, 157);
+.firstCtn {
+  width:20%;
+  height:100vh;
+  background-color: #f1eef6;
+  border-radius: 15px;
+  padding:5px;
+  margin-bottom:10px;
 }
-.containers {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  width: 100vw;
-  background-color: #f6f7fb;
+.overview-header{
+  font-weight: 800;
+  text-align:left;
+  margin-left:10%
 }
 .status {
-  justify-content: space-around;
+  height: 44%;
   width:90%;
+  background-color: #FFF;
+  margin:auto;
+  border-radius:15px;
+  margin-top: 5%;
+  
 }
-.projects {
-  font-weight: 900;
+.pie{
+    height: 40%;
+    width:90%;
+    background-color: #FFF;
+    margin:auto;
+    border-radius:15px;
+    margin-top:12%
 }
-.num {
-  font-weight: 900;
-  font-size:small;
+
+.break1{
+  background-color:#F1EEF6;
+  width:80%;
+  height:1.5px;
+  margin:auto;
+  background-color: rgb(130, 123, 123);
+  margin-bottom:8%;
+ 
 }
-.toogleAndDash{
-    justify-content: space-around;
-    display:flex;
-    width:28%;
+.break{
+  background-color:#F1EEF6;
+  width:80%;
+  height:1.1px;
+  margin:auto;
+  background-color: rgb(130, 123, 123);
+  margin-top:10%;
+  margin-bottom:10%;
+ 
 }
-.container1 {
-  height: 100%;
-  width: 62%;
-  overflow-y: scroll;
+.todo{
+  display:flex;
+  justify-content: space-around
+}
+.iconCtn{
+  background-color: #F1EEF6 ;
+  margin: left;
+  padding:2%;
+  border-radius: 12px;
+}
+.second-Ctn{
+  height:100vh;
+  width:100%;
+}
+.sec-header{
+  height:60px;
+  background-color:#F1EEF6;
+  width: 80%;
+  border-radius: 15px;
+  margin-left: .5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -.5%;
+}
+.addTask{
   margin-left:5px;
 }
+.date{
+  font-weight: 800;
+  font-size: 15px !important;
+  width:10vw !important;
 
-/* below css will get rid of scrollbar display */
-/* ::-webkit-scrollbar {
-  display: none;
-} */
-
-.container2 {
-  height: 100%;
-  width: 32%;
 }
-.projects-snap {
-  background-color: white;
-  height: 40%;
-  border-radius: 10px;
-  margin: 5px;
-  overflow-y: scroll;
-}
-.dashboard-snap {
-  background-color: white;
-  height: 42%;
-  border-radius: 10px;
-  margin: 5px;
-  margin-bottom: 0px;
-}
-.team-snap {
-  background-color: white;
-  height: 30%;
-  border-radius: 10px;
-  margin: 5px;
-}
-.myTasks-snap {
-  background-color: white;
-  height: 52%;
-  border-radius: 10px;
-  margin: 5px;
-}
-.calender-snap {
-  background-color: white;
-  height: 28%;
-  border-radius: 10px;
-  margin: 5px;
-  margin-right: 20%;
-}
-.inbox-snap {
-  background-color: white;
-  height: 26%;
-  border-radius: 10px;
-  margin: 5px;
-  margin-right: 20%;
-}
-.chat-snap {
-  background-color: white;
-  height: 27%;
-  border-radius: 10px;
-  margin: 5px;
-  margin-right: 20%;
-}
-.project-TaskSnaps{
-  display:flex;
-  justify-content: space-around;
-  flex-direction:row;
-  height:24vh;
-  position:fixed;
-  overflow:hidden;
-  width:58vw;
- 
-}
-
-
-/* --Homepage(Dashboard snap) -- */
-
-.dashboard-header{
- 
-  align-items: center;
-  display:flex;
-  justify-content: space-between;
-  width:15vw;
-}
-.dBoard-AddTask{
-  border: 1px solid grey;
-  border-radius: 12px;
-  background-color:transparent;
-  color:rgba(14, 8, 2, 0.708);
-}
-.plusBtn{
-  color:rgba(14, 8, 2, 0.708);
-}
-.dBoard-AddTask:hover{
-  color:black;
-  background-color: #1ccc7f;
+.calender{
+  width:80%;
+  border-radius: 15px;
+  height:40vh;
+  margin-top: 20px;
+  margin-left: 5px;
+  background-color: #F1EEF6 !important;
+  padding:10px;
 }

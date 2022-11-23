@@ -1,90 +1,83 @@
-.logo {
-  width: 9%;
-  margin-left: 2%;
+*,body{
+  
+  padding:0;
+  margin:0;
+
 }
-.logoName {
-  font-weight: 900;
+.Login-page{
+  height:100%;
+  width:100%;
+  padding:0;
+  margin:0;
+  position: fixed;
+
 }
-.gradient-form {
-  height: 100vh !important;
+.header{
+  margin:auto;
+  font-weight: bolder !important; 
+  font-size: 70px!important;
+  margin-left: 10%;
+  margin-top:5%;
+  background-color: transparent !important;
+
+}
+.stats{
+  width:10%;
+  position:absolute;
+  left:25%;
+  top:40%;
+
 }
 
-.form-ctn {
-  margin-top: -10%;
+.login-div{
+  width:40vw;
+  height:50vh;
+  position: absolute;
+  top:35%;
+  left:55%;
+  border-radius: 15px;
+  background-color: #273b4ad1 !important; 
+  display:flex;
+  flex-direction: column;
+  color:white;
 }
-
-.gradient-custom-2 {
-  /* fallback for old browsers */
-  height: 100vh !important;
-
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: rgb(193, 217, 206);
-  background: linear-gradient(
-    to left,
-    rgb(172, 189, 182) 0%,
-    rgb(172, 205, 190) 0%,
-    rgb(244, 243, 243) 94%
-  );
+.login-inner{
+  width:80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.tasksSnap {
-  margin-bottom: 10%;
+.email{
+  margin-top:12%;
+  margin-bottom:5%;
 }
-.form-control {
-  border: 0;
+input{
+  padding:6px;
+  width:60%
 }
-.rememberMe {
-  font-size: x-small;
+.password{
+  margin-right:25px;
 }
-.Gmail-Msoft {
-  width: 40%;
+.signIn-btn{
+  background-color: transparent;
+  border:none;
 }
-.company-logo {
-  width: 18%;
-  padding: 43px 2px 0 5px;
-  margin-bottom: 40px;
-}
-.headerLogin {
-  font-weight: 900;
-}
-.LoginOrNew {
-  font-size: smaller;
-  font-weight: 400;
-}
-.createNew {
-  font-weight: 700;
-}
-.hr-break {
-  height: 1px;
-  color: black;
-  background-color: black;
-  border: none;
-  width: 20vw;
+.vector{
+  margin-top: 10%;
+  margin-right:5%;
 }
 
 @media (min-width: 920px) {
-  .gradient-form {
-    height: 100vh !important;
-    position: fixed;
-  }
+
 }
 
 @media (min-width: 768px) {
-  .gradient-form {
-    height: 100vh !important;
-  }
+ 
 }
 @media (min-width: 769px) {
-  .gradient-custom-2 {
-    border-top-right-radius: 0.3rem;
-    border-bottom-right-radius: 0.3rem;
-  }
+ 
 }
 @media (max-width: 768px) {
-  .tasksSnap {
-    width: 90%;
-  }
-  .logo {
-    width: 10%;
-    margin-left: 5%;
-  }
+  
 }

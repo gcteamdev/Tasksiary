@@ -1,42 +1,76 @@
-.input {
-    display: flex;
-    width: 95%;
-    position: relative;
-    align-items: center;
+.form{
+  height:600px;
+  display: flex;
+  flex-direction: column;
+}
+ 
+  .input-box1{
+    width:30vw;
+    border: 2px solid rgba(128, 128, 128, 0.283);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(219, 215, 215, 0.399);
+    padding:2%;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    background-color: #99aaec !important;
   }
   
-  .input__box {
-    width: 100%;
-    border-radius: 50px;
-    padding: 20px 30px;
-    font-size: 25px;
-    border: none;
-    transition: 0.2s;
-    box-shadow: inset 0 0 5px black;
+  .input-box2{
+    width:30vw;
+    border: 2px solid rgba(128, 128, 128, 0.283);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(219, 215, 215, 0.399);
+    padding:2%;
+    margin-top: 5px;
+    margin-bottom: 2px;
   }
+  .input-box3{
+    width:30vw;
+    border: 2px solid rgba(128, 128, 128, 0.283);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(219, 215, 215, 0.399);
+    padding:2%;
+    margin-top: 5px;
+    margin-bottom: 2px;
+  }
+
+  .input-box4{
+    width:30vw;
+    border: 2px solid rgba(128, 128, 128, 0.283);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(219, 215, 215, 0.399);
+    padding:2%;
+    margin-top: 5px;
+    margin-bottom: 2px;
+  }
+  .input-box5{
+    width:30vw;
+    border: 2px solid rgba(128, 128, 128, 0.283);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(219, 215, 215, 0.399);
+    padding:2%;
+  }
+ 
   
-  .input__box:focus {
-    box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
-    outline: none;
-  }
   
   .input_submit {
     position: absolute;
     width: 50px;
     height: 50px;
     margin: 12px;
-    border-radius: 50px;
-    right: 0px;
+    border-radius: 30px;
+    right: 40px;
     border: none;
     font-size: 15px;
-    background-color: #2f74c0;
+    background-color: #388ae2;
     color: white;
+    font-size:30px;
     transition: 0.2s all;
     box-shadow: 0 0 10px black;
   }
   
   .input_submit:hover {
-    background-color: #388ae2;
+    background-color: #1ccc7f;
   }
   
   .input_submit:active {
@@ -44,48 +78,83 @@
     box-shadow: 0 0 5px black;
   }
   
-  .container {
+  .todo-wrapper {
     width: 95%;
     display: flex;
-    margin-top: 10px;
     justify-content: space-between;
     align-items: flex-start;
   }
   
   .todos {
-    border-radius: 5px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    width: 47.5%;
-    padding: 15px;
-    background-color: rgb(50, 195, 205);
+    width: 31%;
+    height:83vh;
+    background-color: #f6f7fb;
+    padding:20px;
+    margin-top: -1.5%;
+  }
+  .box-1{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top: 8px solid #5adca4;
+  }
+  .box-2{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top: 8px solid #e388fa;
+  }
+  .box-3{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top: 8px solid #71a4e3;
   }
   
   .dragactive {
-    background-color: rgb(0, 221, 236);
+    background-color: #1ccc7f
   }
   
+  .dragprogress {
+    background-color: #c98dd8;
+  }
   .dragcomplete {
-    background-color: rgb(255, 38, 0);
+    background-color: #3591d8;
   }
   
   .remove {
-    background-color: rgb(235, 103, 80);
+    background-color: #f6f7fb
   }
-  
+  .task-box-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1.5px solid rgb(202, 195, 195);
+    padding:2px;
+
+  }
+  .card-header{
+    font-weight: 900;
+  }
+
   .todos__heading {
-    font-size: 30px;
+    font-size: 15px;
+    font-weight: 900;
     /* text-align: center; */
-    color: white;
+
   }
   
   .todos__single {
-    display: flex;
-    border-radius: 5px;
-    padding: 20px;
-    margin-top: 15px;
-    background-image: url("https://img.freepik.com/free-photo/crumpled-yellow-paper-background-close-up_60487-2390.jpg?size=626&ext=jpg");
+    display: block;
+    border-radius: 12px;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: white;
     transition: 0.2s;
+    width:90%;
+    margin-left: 5%;
+    height:22.5vh;
+    box-shadow: 0 0 2px rgb(88, 87, 87);
   }
   
   .drag {
@@ -93,27 +162,75 @@
   }
   
   .todos__single:hover {
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px rgb(204, 209, 206);
     transform: scale(1.03);
   }
   
   .todos__single--text {
-    flex: 1;
+   /*  flex: 1; */
     padding: 5px;
     border: none;
-    font-size: 20px;
+    font-size: 12px;
+    width:100%
   }
   
   .todos__single--text:focus {
     outline: none;
+    background-color: #b9f8dd;
+    width:100%;
+    height:50%;
+    font-size: 13px;
   }
-  
-  .icon {
-    margin-left: 10px;
-    font-size: 25px;
+  .task-type{
+    border:2px solid #1ccc80c4;
+    border-radius: 12px;
+    padding:0px 4px 0px 4px;
+    text-align: center;
+    font-size: xx-small;
+    width:4vw
+  }
+  .card-body{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.654);
+  }
+  .card-icon {
+    font-size: 18px;
     cursor: pointer;
+    color:green
+    
   }
   
+  .delete{
+    color:#1ccc8074;
+    margin-left:60%
+  }
+  .delete:hover{
+    color:rgb(239, 51, 51)
+  }
+
+  .todo-wrapper{
+    padding:25px;
+  }
+ 
+  #card-boottom-items{
+    color: grey;
+    
+  }
+  .delete-dueDate{
+    width:22%;
+    height:15px
+  }
+  .date{
+    font-size: xx-small;
+    width:70px;
+    margin-right: 25%;
+
+  }
+  .card-holder{
+    height:75vh;
+    overflow: scroll;
+    padding: 0 10px 
+  }
+
   @media (max-width: 1100px) {
     .todos {
       width: 45%;
@@ -125,7 +242,7 @@
       width: 95%;
     }
     .container {
-      width: 95%;
+    /*   width: 95%; */
       flex-direction: column;
     }
     .todos {

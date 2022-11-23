@@ -9,14 +9,12 @@ import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
 import AddBusinessTwoToneIcon from '@mui/icons-material/AddBusinessTwoTone';
 import PointOfSaleTwoToneIcon from '@mui/icons-material/PointOfSaleTwoTone';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
-import Logo from '../assets/Sidebar/Group 258.png';
+import Logo from '../assets/Sidebar/Ellipse 51.png';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LogoutIcon from '@mui/icons-material/Logout';
-import WLogo from '../assets/Login/greenLogo.png';
-
 const Sidebar = ({ children }) => {
   const [isOpen, setOpen] = useState(true);
   const toggle = () => setOpen(!isOpen);
@@ -82,13 +80,15 @@ const Sidebar = ({ children }) => {
   ];
   return (
     <div className="container">
-      <div style={{ width: isOpen ? '200px' : '50px' }} className="sidebar">
+      <div style={{ width: isOpen ? '220px' : '50px' }} className="sidebar">
         <div className="top_section">
           <div
             style={{ display: isOpen ? 'block' : 'none' }}
             className="logoSide"
           >
             <img className="nav-logo" src={Logo} alt="logo" />
+            <h5 className="titile"> Sheila Jones</h5>
+            <p className="job-title"> Marketing Manager</p>
           </div>
           <div style={{ marginLeft: isOpen ? '20px' : '0px' }} className="bars">
             <MenuTwoToneIcon onClick={toggle} />
@@ -134,7 +134,12 @@ const Sidebar = ({ children }) => {
             ))}
           </div>
         </div>
-        <img className="navBottomLogo" src={WLogo} alt="logo" />
+       
+        <h3 className="navBottomLogo"  
+        style={{ display: isOpen ? 'block' : 'none' }}
+        > Tasksiry</h3>
+
+     
       </div>
       <main className="col-12 main"> {children} </main>
     </div>
