@@ -15,6 +15,11 @@ import { useState } from 'react';
 import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LogoutIcon from '@mui/icons-material/Logout';
+import EventNoteIcon from '@mui/icons-material/EventNote';
+
+
+
+
 const Sidebar = ({ children }) => {
   const [isOpen, setOpen] = useState(true);
   const toggle = () => setOpen(!isOpen);
@@ -26,6 +31,16 @@ const Sidebar = ({ children }) => {
       icon: <HomeOutlinedIcon />,
     },
     {
+      path: '/dailyTasks',
+      name: 'DailyTasks',
+      icon: <TaskOutlinedIcon />,
+    },
+    {
+      path: '/calendar',
+      name: 'Calendar',
+      icon: < EventNoteIcon />,
+    },
+    {
       path: '/inbox',
       name: 'Inbox',
       icon: <InboxIcon />,
@@ -35,11 +50,7 @@ const Sidebar = ({ children }) => {
       name: 'Dashboard',
       icon: <DashboardOutlinedIcon />,
     },
-    {
-      path: '/dailyTasks',
-      name: 'DailyTasks',
-      icon: <TaskOutlinedIcon />,
-    },
+    
     {
       path: '/team',
       name: 'Team Members',

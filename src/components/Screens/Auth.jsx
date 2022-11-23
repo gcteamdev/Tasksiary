@@ -12,6 +12,7 @@ import HR from '../MainPages/Departments/HR';
 import "../Navigation/Sidebar";
 import Alerts from '../MainPages/Alerts';
 import Profile from '../MainPages/Profile';
+import Calendar from '../MainPages/Calendar';
 
 
 
@@ -31,6 +32,7 @@ function Auth() {
         <Route exact path="/hr" element={<HR/>} /> 
         <Route exact path="/alerts" element={<Alerts/>} /> 
         <Route exact path="/profile" element={<Profile/>} /> 
+        <Route exact path= "/calendar" element={<Calendar />} />
 
      </Routes>
    </Sidebar>

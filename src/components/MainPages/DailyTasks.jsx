@@ -186,12 +186,6 @@ function DailyTasks() {
               <h3 className="Tasks-Heading "> Daily Tasks</h3>
             </div>
 
-            {/* 
-            <h6 className="AddTaskSign" onClick={handleAddTask}>
-                    + Add Task
-             </h6>
-
- */}
 
             <div className="header-sideCtn">
               <GroupAddIcon />

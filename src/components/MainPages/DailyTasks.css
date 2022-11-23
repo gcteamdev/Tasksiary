@@ -5,7 +5,7 @@
 .dailyTask-P {
   height: 100%;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   background-color: #f6f7fb;
   overflow: scroll;
 }
@@ -39,7 +39,7 @@
 #header-nav {
   height: 8.5vh;
   margin-bottom: -16px;
-  width: 100vw !important;
+  width: 95vw !important;
 }
 ul {
   margin-right: 8.5%;
