@@ -1,5 +1,23 @@
 # A project management application that has been developed using a combination of React.js, Node.js, and API. To enhance the user interface experience, a complex React drag and drop feature has been implemented.
 
+# Table of contents
+* Overview
+* Features
+  * Made with:
+    * React.Js
+    * JavaScript
+    * HTML / CSS
+    * Material UI
+    * Bootstrap
+    * Node.js
+  * Installations
+* Demo
+	* Live Website  [Taskiary](https://tasksiary.netlify.app/)
+* License
+  * Distributed under the MIT License. See License.md for more information.
+* Author
+  * Developer: 👔 🔗 [G. Hamza Choudhury](https://www.linkedin.com/in/devhamza/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
