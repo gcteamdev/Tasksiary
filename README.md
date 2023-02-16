@@ -1,3 +1,5 @@
+# A project management application that has been developed using a combination of React.js, Node.js, and API. To enhance the user interface experience, a complex React drag and drop feature has been implemented.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
